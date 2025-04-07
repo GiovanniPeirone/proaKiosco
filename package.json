@@ -1,0 +1,32 @@
+{
+  "name": "proaquiosco",
+  "version": "1.0.0",
+  "description": "Quiosco del proa la falda",
+  "main": "src/server.ts",
+  "scripts": {
+    "build": "tsc src/server.ts",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiovanniPeirone/proaQuiosco.git"
+  },
+  "keywords": [],
+  "author": "Giovanni Peirone",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/GiovanniPeirone/proaQuiosco/issues"
+  },
+  "homepage": "https://github.com/GiovanniPeirone/proaQuiosco#readme",
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/ejs": "^3.1.5",
+    "@types/express": "^5.0.1",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "ts-node": "^10.9.2"
+  }
+}
