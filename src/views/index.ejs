@@ -1,5 +1,16 @@
 <%- include('templates/head') %>
 <body>
-    <h1>Hola</h1>
+    <%- include('templates/header') %>
+    <main>
+        <div class="productos">
+            <% for(let i = 0; i < 20; i++) { %>
+                <div class="producto">
+                    <img src="" alt="imagen">
+                    <h1>Producto</h1>
+                </div>
+            <% } %>
+        </div>
+    </main>
+    <%- include('templates/footer') %>
 </body>
 </html>
