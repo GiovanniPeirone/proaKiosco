@@ -6,5 +6,9 @@ router.use('', (req : Request, res : Response) => {
     res.render('index.ejs')
 })
 
+//router.get('/pedir/:id',)
+
+
+
 
 export default router;

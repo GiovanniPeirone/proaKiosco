@@ -43,15 +43,47 @@ main{
 .productos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-left: 0%;
+
 }
 
 .producto{
-    padding: 1.5%;
+    color: #ffffff;
+    width: 95%;
+    height: 400px;
+    border: #f5f5f5 1px solid;
+    border-radius: 10px;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+.producto img{
+    background-color: #007bff;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+button{
+    margin: auto;
+    width: 99%;
+    border-radius: 10px;
+    border: none;
+    background-color: #007bff;
     color: #ffffff;
 }
 
-@media (max-widht :  800px){
+footer{
+    padding : 10%;
+}
+
+@media (max-width :  800px){
     .productos{
         grid-template-columns: repeat(1, 1fr);
+        margin-left: 0%;
+    }
+    .producto{
+        margin: 0%;
+        margin-bottom: 2%;
     }
 }

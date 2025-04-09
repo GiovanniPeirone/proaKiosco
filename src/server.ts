@@ -4,13 +4,13 @@
 
 */
 
-import Express, { urlencoded } from "express";
+import Express, { urlencoded, Request, Response } from "express";
 import cors from 'cors';
 
 import path from 'path';
 
-import views from './router/views'
-
+import views from './router/views';;
+import api from './router/api';
 
 const app = Express();
 
@@ -26,7 +26,12 @@ app.use(Express.urlencoded({ extended: true }));;
 
 
 app.use('', views)
+app.use('api/', api)
 
+app.use((req : Request, res : Response) => {
+    res.status(404).json({ message : '404 url invalida'})
+    console.log("url 404")
+})
 
 app.listen(PORT , () => {
     console.log("Aplicaion Corrinedo en :", PORT);
