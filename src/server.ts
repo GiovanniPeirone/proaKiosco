@@ -28,6 +28,11 @@ app.use(Express.urlencoded({ extended: true }));;
 app.use('', views)
 app.use('api/', api)
 
+
+app.use('', (req : Request, res : Response) => {
+    res.redirect('/tienda')
+})
+
 app.use((req : Request, res : Response) => {
     res.status(404).json({ message : '404 url invalida'})
     console.log("url 404")
