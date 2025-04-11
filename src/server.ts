@@ -1,6 +1,7 @@
 /*
 
-
+    Proa La Falda
+    Giovanni Peirone
 
 */
 
@@ -25,9 +26,8 @@ app.use(Express.json())
 app.use(Express.urlencoded({ extended: true }));;
 
 
-app.use('', views)
+app.use('', views);
 app.use('api/', api)
-
 
 app.use('', (req : Request, res : Response) => {
     res.redirect('/tienda')
